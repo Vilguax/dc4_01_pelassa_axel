@@ -9,10 +9,11 @@ tableau.
 
 function ft_print_alphabet() {
     var alphabet = "abcdefghijklmnopqrstuvwxyz";
-    var alphabet_uppercase = "";
-    for (var i = 0; i < alphabet.length; i++) {
-        alphabet_uppercase += String.fromCharCode(alphabet.charCodeAt(i) - 32);
+    var alphabetArray = alphabet.split("");
+    var alphabetUppercase = "";
+    for (var i = 0; i < alphabetArray.length; i++) {
+        alphabetUppercase += String.fromCharCode(alphabetArray[i].charCodeAt(0) - 32);
     }
-    console.log(alphabet_uppercase);
+    console.log(alphabetUppercase);
 }
 ft_print_alphabet();
