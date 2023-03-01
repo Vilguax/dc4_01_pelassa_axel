@@ -8,15 +8,15 @@ let tab = [0,1,2,3,4,5,6,7,8,9]
 
 */
 
-function ft_insert_number(nb) {
+function ft_insert_number(number) {
     let tab = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
     let i = 0;
     
-    while (i < tab.length && nb > tab[i]) {
+    while (i < tab.length && number > tab[i]) {
       i++;
     }
 
-    tab.splice(i, 0, nb);
+    tab.splice(i, 0, number);
   
     console.log(tab);
   }
