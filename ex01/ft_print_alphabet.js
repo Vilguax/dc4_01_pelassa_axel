@@ -8,15 +8,14 @@ tableau.
 */
 
 function ft_print_alphabet(str) {
+    var array = str.split("");
     var i = 0;
-    var result = "";
-
-    while (i < str.length) {
-        result += String.fromCharCode(str.charCodeAt(i) - 32);
+    while (i < array.length) {
+        array[i] = String.fromCharCode(array[i].charCodeAt(0) - 32);
         i++;
     }
-    console.log(result);
-    
+
+    console.log(array.join(""));
 }
 
 ft_print_alphabet("abcdefghijklmnopqrstuvwxyz");
