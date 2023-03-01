@@ -7,13 +7,16 @@ tableau.
 
 */
 
-function ft_print_alphabet() {
-    var alphabet = "abcdefghijklmnopqrstuvwxyz";
-    var alphabetArray = alphabet.split("");
-    var alphabetUppercase = "";
-    for (var i = 0; i < alphabetArray.length; i++) {
-        alphabetUppercase += String.fromCharCode(alphabetArray[i].charCodeAt(0) - 32);
+function ft_print_alphabet(str) {
+    var i = 0;
+    var result = "";
+
+    while (i < str.length) {
+        result += String.fromCharCode(str.charCodeAt(i) - 32);
+        i++;
     }
-    console.log(alphabetUppercase);
+    console.log(result);
+    
 }
-ft_print_alphabet();
+
+ft_print_alphabet("abcdefghijklmnopqrstuvwxyz");
