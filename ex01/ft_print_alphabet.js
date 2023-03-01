@@ -8,6 +8,11 @@ tableau.
 */
 
 function ft_print_alphabet() {
-    
+    var alphabet = "abcdefghijklmnopqrstuvwxyz";
+    var alphabet_uppercase = "";
+    for (var i = 0; i < alphabet.length; i++) {
+        alphabet_uppercase += String.fromCharCode(alphabet.charCodeAt(i) - 32);
+    }
+    console.log(alphabet_uppercase);
 }
 ft_print_alphabet();
